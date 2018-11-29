@@ -17,6 +17,7 @@
 
 
 /* Hidden Objects */
+/*Hides clickable items not needed in a printed page. */
 nav,
 footer,
 article {
@@ -24,11 +25,13 @@ article {
 }
 
 /* Comic Book Sheet Styles */
+/*Centers the comic sheet. */
 section#sheet {
     width: 6in;
     margin: 0in auto;
 }
 
+/*Changes the size of specific images to look better on a printed page. */
 img.size1 {
     width: 5in;
 }

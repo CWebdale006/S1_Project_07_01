@@ -18,10 +18,10 @@
 
 
 /* Import Basic Design Styles Used on All Screens */
-
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/*Displays the page body as a flexbox oriented as rows with wrapping, including progressive enhancement. */
 body {
     display: -webkit-flex;
     display: flex;
@@ -30,6 +30,7 @@ body {
     flex-flow: row wrap;
 }
 
+/*Style rules to give the comic book sheet more of the page width, including progressive enhancement. */
 section#sheet {
     -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
@@ -46,10 +47,13 @@ article {
 */
 
 @media only screen and (max-width: 480px) {
+
+    /*Images on mobile will occupy a single row. */
     img.panel {
         width: 100%;
     }
 
+    /*Puts the horizontal nav always above the body footer, including progressive enhancement. */
     nav.horizontal {
         -webkit-order: 99;
         order: 99;
@@ -67,6 +71,8 @@ article {
 */
 
 @media only screen and (min-width: 481px) {
+
+    /*Displays the horizontal nav as a single row of links, including progressive enhancement. */
     nav.horizontal ul {
         display: -webkit-flex;
         display: flex;
@@ -77,11 +83,13 @@ article {
         height: 40px;
     }
 
+    /*Each list item will grow and shrink at the same time, including progressive enhancement. */
     nav.horizontal ul li {
         -webkit-flex: 1 1 auto;
         flex: 1 1 auto;
     }
 
+    /*Changes widths of specific images to better suit a wider screen. */
     img.size1 {
         width: 100%;
     }
